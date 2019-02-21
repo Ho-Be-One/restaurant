@@ -8,6 +8,9 @@
     <link rel="icon" href="../../../../favicon.ico">
 <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
 <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.2/css/all.css" integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr" crossorigin="anonymous">
+
+
     <title>Jumbotron Template for Bootstrap</title>
 
     <!-- Bootstrap core CSS -->
@@ -56,71 +59,55 @@
         </div>
       </div>
 
-    <div class="container">
-	    <div class="blog-post">
-            <h2 class="blog-post-title">New feature</h2>
-            <p class="blog-post-meta">December 14, 2013 by <a href="#">Chris</a></p>
 
-            <p>Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Aenean lacinia bibendum nulla sed consectetur. Etiam porta sem malesuada magna mollis euismod. Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh, ut fermentum massa justo sit amet risus.</p>
-            <ul>
-              <li>Praesent commodo cursus magna, vel scelerisque nisl consectetur et.</li>
-              <li>Donec id elit non mi porta gravida at eget metus.</li>
-              <li>Nulla vitae elit libero, a pharetra augue.</li>
-            </ul>
-            <p>Etiam porta <em>sem malesuada magna</em> mollis euismod. Cras mattis consectetur purus sit amet fermentum. Aenean lacinia bibendum nulla sed consectetur.</p>
-            <p>Donec ullamcorper nulla non metus auctor fringilla. Nulla vitae elit libero, a pharetra augue.</p>
-          </div><!-- /.blog-post -->
-    <div><h1>Laissez nous un message :)</h1></div>
+<div class="container">
+  <div class="row">
+    <div class="col-sm">
+    </div>
+    <div class="col-sm">
+      <div><h3><i class="fa fa-envelope-square"></i> Contacte-nous :)</h3></div>
     <br />
     <div class="row">
-        <div class="col-md-6">
-            <div id="googlemap" style="width:100%; height:350px;"></div>
-        </div>
-        <br />
-        <div class="col-md-6">
+        <div class="col-md-12">
             <form class="my-form">
                 <div class="form-group">
                     <label for="form-name">Nom</label>
-                    <input type="email" class="form-control" id="form-name" placeholder="Name">
+                    <input type="email" class="form-control" id="form-name" placeholder="Nom">
+                </div>
+                 <div class="form-group">
+                    <label for="form-name">Prénom</label>
+                    <input type="email" class="form-control" id="form-name" placeholder="Prénom">
                 </div>
                 <div class="form-group">
                     <label for="form-email">Adresse mail</label>
-                    <input type="email" class="form-control" id="form-email" placeholder="Email Address">
+                    <input type="email" class="form-control" id="form-email" placeholder="Adresse mail">
                 </div>
-                <div class="form-group">
-                    <label for="form-subject">Téléphone</label>
-                    <input type="text" class="form-control" id="form-subject" placeholder="Subject">
-                </div>
+                 <div class="form-group">
+				      <label for="exampleSelect1">Objet du mail</label>
+				      <select class="form-control" id="exampleSelect1">
+				        <option>Réservation</option>
+				        <option>Réclamation</option>
+				      </select>
+				    </div>
                 <div class="form-group">
                     <label for="form-message">Message</label>
                     <textarea class="form-control" id="form-message" placeholder="Message"></textarea>
                 </div>
-                <button class="btn btn-warning" type="submit">Contact-nous</button>                
+                <button class="btn btn-warning btn-block" type="submit"><i class="fa fa-share"></i> Envoyer votre message</button>                
             </form>
         </div>
     </div>
+    </div>
+    <div class="col-sm">
+    </div>
+  </div>
 </div>
-
-<script src="https://maps.googleapis.com/maps/api/js"></script>
-<script type="text/javascript">
-    jQuery(function ($) {
-        // Google Maps setup
-        var googlemap = new google.maps.Map(
-            document.getElementById('googlemap'),
-            {
-                center: new google.maps.LatLng(44.5403, -78.5463),
-                zoom: 8,
-                mapTypeId: google.maps.MapTypeId.ROADMAP
-            }
-        );
-    });
-</script>
 <!-- /container -->
 
     </main>
 
-    <footer class="container">
-      <p>&copy; Company 2017-2018</p>
+    <footer class="container text-center">
+      <p>&copy; Ho-Be-One 2018-2019</p>
     </footer>
 
     <!-- Bootstrap core JavaScript
